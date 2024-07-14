@@ -1,0 +1,16 @@
+{% extends 'skincolor_analyzer/base.html' %}
+
+{% block title %}Photo Detail{% endblock %}
+
+{% block content %}
+<div class="jumbotron card mt-5" style="background-color: transparent; text-align: center;">
+    <div class="card-header">
+        <h2>Photo Analysis</h2>
+    </div>
+    <div class="card-body text-center photo-display">
+        <p>Skin Category: <strong>{{ photo.skin_category }}</strong></p>
+        <p>Body Type: <strong>{{ photo.body_type }}</strong></p>
+        <img src="{{ photo.image.url }}" alt="Uploaded Photo">
+    </div>
+</div>
+{% endblock %}

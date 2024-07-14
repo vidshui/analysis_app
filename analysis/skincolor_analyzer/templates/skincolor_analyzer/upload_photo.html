@@ -1,0 +1,18 @@
+{% extends 'skincolor_analyzer/base.html' %}
+
+{% block title %}Upload Photo{% endblock %}
+
+{% block content %}
+<div class="jumbotron mt-5" style="background-color: transparent; text-align: center;">
+    <div class="card-header">
+        <h3>Upload Photo</h3>
+    </div>
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-secondary">Upload Image</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

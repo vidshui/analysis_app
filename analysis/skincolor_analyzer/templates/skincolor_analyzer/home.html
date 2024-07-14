@@ -1,0 +1,13 @@
+{% extends 'skincolor_analyzer/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron mt-5" style="background-color: transparent; text-align: center;">
+    <h2 class="display-4">Welcome to Myntra-BFF!</h2>
+    <h5><i>Where fashion meets friendship <3</i></h5>
+
+    <p class="lead">Discover personalized clothing recommendations tailored to your unique body type and skin tone. Let us be your trusted companion on your style journey, ensuring you always look and feel your best :)</p>
+    <a class="btn btn-secondary btn-lg" href="{% url 'upload_photo' %}" role="button">Upload a Photo</a>
+</div>
+{% endblock %}
